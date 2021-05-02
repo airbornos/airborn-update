@@ -1,0 +1,1 @@
+function initNight(a,b){b.registerMessageHandler(function(a){nightEditor(a.data.nightMode)},"night")}function nightEditor(a){document.getElementsByTagName("html");a?document.documentElement.setAttribute("_firetext_night",""):document.documentElement.removeAttribute("_firetext_night")};

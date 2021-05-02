@@ -1,0 +1,18 @@
+{
+	"eqeqeq": true,
+	"forin": true,
+	"immed": true,
+	"latedef": "nofunc",
+	"newcap": true,
+	"noarg": true,
+	"undef": true,
+	"unused": true,
+	
+	"eqnull": true,
+	"evil": true,
+	"sub": true,
+	
+	"browser": true,
+	"devel": true,
+	"esversion": 6
+}

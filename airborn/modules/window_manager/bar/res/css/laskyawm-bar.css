@@ -1,0 +1,77 @@
+#bar {
+	background-color: rgba(255, 255, 255, .5);
+	z-index: -1000;
+	position: absolute;
+	width: 100%;
+	height: 25px;
+	color: white;
+	text-shadow: 1px 1px 1px black;
+}
+.barButton {
+	color: white;
+	text-shadow: 1px 1px 1px black;
+	cursor: pointer;
+	font-weight: bold;
+}
+#toggleApps {
+	padding: 3px 0;
+	height: 25px;
+	width: 100px;
+	text-align: center;
+	display: inline-block;
+}
+#barIcons {
+	float: right;
+}
+#barIcons > * {
+	padding: 3px 0;
+	font-size: 15px;
+	float: right;
+}
+#togglePowerMenu {
+	padding: 4px 10px;
+	margin: 0;
+	line-height: 17px;
+}
+.barMenu {
+	z-index: 1000;
+	position: absolute;
+	background: white;
+	padding: 10px;
+	border-radius: 7px;
+	filter: drop-shadow(0 0 3px #888);
+	top: 34px;
+}
+.barMenu:not(.shown) {
+	display: none;
+}
+#apps {
+	left: 20px;
+}
+#powerMenu {
+	right: 5px;
+}
+.barMenu:after {
+	content: ' ';
+	height: 0;
+	position: absolute;
+	width: 0;
+	border: 11px solid transparent;
+	border-bottom-color: white;
+	top: -22px;
+	pointer-events: none;
+}
+#apps:after {
+	left: 12px;
+}
+#powerMenu:after {
+	right: 7px;
+}
+.barMenu > div {
+	cursor: pointer;
+}
+.barMenu > div > img {
+	width: 16px;
+	height: 16px;
+	margin-right: 5px;
+}

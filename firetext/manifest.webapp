@@ -1,0 +1,172 @@
+{
+  "name": "Documents",
+  "description": "The word processor for Firefox OS",
+  "version": "0.5.1",
+  "type": "privileged",
+  "launch_path": "/index.html",
+  "developer": {
+    "name": "Airborn",
+    "url": "https://www.airborn.io/"
+  },
+  "icons": {
+    "64": "/style/icons/app/64.png",
+    "128": "/style/icons/app/128.png",
+    "256": "/style/icons/app/256.png"
+  },
+  "default_locale": "en",
+  "locales": {
+    "ar": {
+      "name": "المستندات"
+    },
+    "bg": {
+      "name": "Документи",
+      "description": "Програмата за текстова обработка на Файърфокс ОС"
+    },
+    "bn-BD": {
+      "name": "নথিসমূহ",
+      "description": "ফায়ারফক্স ওএস এর জন্য ওয়ার্ড প্রসেসর"
+    },
+    "bn-IN": {
+      "name": "নথিসমূহ",
+      "description": "Firefox OS এর word processor"
+    },
+    "br": {
+      "name": "Teulioù"
+    },
+    "cs": {
+      "name": "Dokumenty",
+      "description": "Textový procesor pro Firefox OS"
+    },
+    "de": {
+      "name": "Dokumente",
+      "description": "Die Textverarbeitung für Firefox OS"
+    },
+    "eo": {
+      "name": "Dokumentoj",
+      "description": "La tekstredaktilo por Firefox OS"
+    },
+    "es": {
+      "name": "Documentos",
+      "description": "El procesador de textos para Firefox OS"
+    },
+    "fa-IR": {
+      "name": "اسناد",
+      "description": "پردازش واژه برای سیستم عامل فایرفاکس"
+    },
+    "fr": {
+      "description": "L'éditeur de texte pour Firefox OS"
+    },
+    "he": {
+      "name": "מסמכים",
+      "description": "מעבד התמלילים ל-Firefox OS"
+    },
+    "hi-IN": {
+      "name": "डॉक्यूमेंट",
+      "description": "फ़ायरफ़ॉक्स ओएस के लिए फायरटेक्सट"
+    },
+    "hu": {
+      "name": "Dokumentumok",
+      "description": "A Firefox OS szövegszerkesztője"
+    },
+    "id": {
+      "name": "Dokumen",
+      "description": "Pengolah kata untuk Firefox OS"
+    },
+    "it": {
+      "name": "Documenti",
+      "description": "L'editor di testo per Firefox OS"
+    },
+    "ja": {
+      "name": "キュメント",
+      "description": "Firefox OS 用のワードプロセッサーです"
+    },
+    "ml-IN": {
+      "name": "ഡോകുമെന്റ്സ്",
+      "description": "ഫയര്‍ഫോക്സ് ഒയസിന്റെ വേര്‍ഡ്‌ പ്രോസ്സസര്‍"
+    },
+    "nl": {
+      "name": "Documenten",
+      "description": "De tekstverwerker voor Firefox OS"
+    },
+    "pl": {
+      "name": "Dokumenty",
+      "description": "Procesor tekstu dla Firefox OS"
+    },
+    "pt-BR": {
+      "name": "Documentos",
+      "description": "O processador de texto para Firefox OS"
+    },
+    "ro": {
+      "name": "Documente",
+      "description": "Procesorul word pentru Firefox OS"
+    },
+    "ru": {
+      "name": "Документы",
+      "description": "Текстовый процессор для Firefox OS"
+    },
+    "sk": {
+      "name": "Dokument"
+    },
+    "ta-IN": {
+      "name": "ஆவணங்கள்",
+      "description": "Firefox OS க்கான சொல் செயலி"
+    },
+    "te-IN": {
+      "name": "Patralu"
+    },
+    "tr": {
+      "name": "Dokümanlar"
+    },
+    "zh-CN": {
+      "name": "上的文档",
+      "description": "适用于 Firefox OS 的文字处理程序"
+    },
+    "zh-TW": {
+      "name": "上的文件"
+    }
+  },
+  "permissions": {
+    "device-storage:sdcard": {
+      "description": "Required for document storage.",
+      "access": "readwrite"
+    },
+    "get-object-locations": {}
+  },
+  "activities": {
+    "open": {
+      "href": "./index.html",
+      "disposition": "window",
+      "filters": {
+        "type": [
+          "text/plain",
+          "text/html"
+        ],
+        "url": {
+          "required": true
+        },
+        "editable": {
+          "required": false
+        }
+      },
+      "returnValue": false
+    },
+    "view": {
+      "href": "./index.html",
+      "disposition": "window",
+      "filters": {
+        "type": [
+          "text/plain",
+          "text/html"
+        ],
+        "url": {
+          "required": true
+        },
+        "editable": {
+          "required": false
+        }
+      },
+      "returnValue": false
+    }
+  },
+  "window_size": "maximize"
+}

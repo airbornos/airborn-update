@@ -1,0 +1,5 @@
+{{#.}}
+<a href="#" data-name="{{.}}">
+	<img src="styles/img/{{.}}.png" alt="{{.}}"></img>
+</a>
+{{/.}}

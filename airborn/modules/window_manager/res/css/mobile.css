@@ -1,0 +1,41 @@
+#bar,
+#toggleApps,
+.window .titlebar,
+.window .titlebar .tabbar .tabtitlebar,
+.window .titlebar .addtab {
+	height: 40px !important;
+	line-height: 40px;
+}
+#toggleApps {
+	padding: 0;
+}
+#togglePowerMenu {
+	padding: 12px 17px;
+}
+.barMenu {
+	top: 44px;
+}
+.barMenu > div {
+	line-height: 32px;
+	height: 32px;
+	margin: 2px;
+}
+.barMenu > div > img {
+	width: 32px;
+	height: 32px;
+	vertical-align: -9px;
+}
+.window .tabs {
+	height: calc(100% - 40px);
+}
+.window .titlebar .tabbar {
+	overflow-x: auto;
+}
+@media (max-width: 480px) {
+	#toggleApps {
+		display: none;
+	}
+	.window .titlebar {
+		padding-left: 0;
+	}
+}

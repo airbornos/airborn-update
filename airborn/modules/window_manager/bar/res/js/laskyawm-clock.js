@@ -1,0 +1,1 @@
+(function(){function c(){clearTimeout(d);var a=new Date;b.textContent=a.toLocaleTimeString(navigator.languages||navigator.language,{hour:"numeric",minute:"numeric"}).replace(/(:..):../,"$1");d=setTimeout(c,6E4-1E3*a.getSeconds()-a.getMilliseconds())}if("mobile"!==deviceType){var b=document.createElement("span");b.id="barClock";c();window.bar.addItem(b);var d}})();

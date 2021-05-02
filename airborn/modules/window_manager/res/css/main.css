@@ -1,0 +1,101 @@
+* {
+	box-sizing: border-box;
+}
+html {
+	height: 100%;
+}
+body {
+	margin: 0;
+	cursor: default;
+	font-family: Calibri, Lato, Ubuntu, sans-serif;
+	height: 0;
+}
+.window {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute !important;
+	pointer-events: none;
+}
+.window .titlebar > *,
+.window .tabs {
+	pointer-events: all;
+}
+.window .titlebar {
+	height: 25px;
+	padding-left: 100px;
+}
+.window .titlebar .tabbar {
+	display: inline-block;
+	white-space: nowrap;
+	max-width: calc(100% - 38px - var(--bar-icons-width));
+	overflow: hidden;
+	z-index: 1;
+	position: relative;
+}
+.window .titlebar .tabbar:hover {
+	overflow-x: auto;
+}
+.window .titlebar .tabbar .tabtitlebar, .window .titlebar .addtab {
+	background-color: #DDD;
+	display: inline-block;
+	height: 25px;
+	margin-right: 6px;
+	line-height: 27px;
+	padding: 0 10px;
+	cursor: default;
+	overflow: hidden;
+	position: relative;
+	vertical-align: top;
+}
+.window .titlebar .tabbar .tabtitlebar:last-child {
+	margin-right: 0;
+}
+.window .titlebar .tabbar .tabtitlebar.focused {
+	background-color: white;
+}
+.window .titlebar .addtab {
+	margin-left: 6px;
+}
+.window .titlebar .icon {
+	margin-right: 6px;
+	height: 16px;
+	vertical-align: -3px;
+}
+.window .tabs {
+	height: calc(100% - 25px);
+}
+.window .tab {
+	width: 100%;
+	height: 100%;
+	left: -100000px;
+	position: absolute;
+	
+	/* Safari Mobile: allow scrolling in apps.
+	 * By default, Safari Mobile resizes iframes to fit their contents.
+	 * To "counteract" this, we make the iframe's container scrollable.
+	 * (http://stackoverflow.com/questions/23083462#23123845)
+	 */
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}
+.window .tab.focused {
+	left: 0;
+	position: relative;
+}
+.window iframe {
+	width: 100%;
+	height: 100%;
+	border: 0;
+	background-color: white;
+	position: absolute;
+	left: 0;
+}
+.loader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	pointer-events: none;
+}
